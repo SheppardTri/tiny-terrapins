@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Typography */
+.hero-header {
+  font-family: 'Playwrite MX', sans-serif;
+}
+
+.body-font {
+  font-family: 'Nunito', sans-serif;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply text-gray-800 font-bold mt-4 mb-2 hero-header text-center text-3xl mb-6;
+}
+
+.markdown p {
+  @apply text-gray-600 mb-4 body-font;
+}
+
+.markdown ul {
+  @apply list-disc list-inside mb-4 body-font;
+}
+
+.markdown li {
+  @apply mb-2 body-font;
+}
+
+.markdown strong {
+  @apply font-semibold body-font;
+}
+
+.markdown em {
+  @apply italic body-font;
+}
+
+/* Hero related */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out;
+}
+
+.animate-slide-in-down {
+  animation: slide-in-down 1.5s ease-out;
+}
