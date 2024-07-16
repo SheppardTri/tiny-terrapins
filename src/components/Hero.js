@@ -20,7 +20,6 @@ function Hero({
       <div className="relative z-10 p-4 text-white animate-fade-in">
         <h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-slide-in-down hero-header"
-          role="heading"
           aria-level="1"
         >
           {title}
